@@ -8,9 +8,9 @@
 
 === start_captain_keevan ===
 DEV MENU
-  * JESS 3
+  * [couldYoumeetMeOn]
         -> couldYoumeetMeOn 
-  * AR 2
+  * [imAlwaysSurprise]
       TODO: This choice is a loose end.
 
 = couldYoumeetMeOn

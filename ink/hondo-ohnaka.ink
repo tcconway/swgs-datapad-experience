@@ -4,6 +4,8 @@
 # author: Disney.<br>all rights reserved.
 # status: done
 
+-> start_hondo_ohnaka
+
 === start_hondo_ohnaka ===
 // AR05, Dianne15, Jess07
 Well done, my friends!

@@ -30,7 +30,7 @@ May the stars light your way!
 <div class="character-header">CSL Announcements</div>
 // DIANNE 11 (15:50)
 Muster is beginning shortly. Please make your way to the Atrium!
-<div class="button"><span class="button-text">SHOW EVENTS</div></div>
+<div class="button"><a href="" class="button-text">SHOW EVENTS</div></div>
 <div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
     * [<em>The next morning...</em>] -> excursion
 
@@ -41,7 +41,7 @@ Attention all passengers! Today is your excursion to Black Spire Outpost on the 
 Your transport time is listed on your itinerary in the Events page of your Datapad.
 Shuttles are available throughout the day between the Halcyon and Docking Bay 3 on Batuu.
 Please be sure to check posted times for the last transport.
-<div class="button"><span class="button-text">SHOW EVENTS</div></div>
+<div class="button"><a href="" class="button-text">SHOW EVENTS</div></div>
 <div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
     * [<em>Around 5:15 PM......</em>] -> blockade
 

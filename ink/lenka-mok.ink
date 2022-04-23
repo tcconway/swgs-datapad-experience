@@ -4,6 +4,8 @@
 # author: Disney.<br>all rights reserved.
 # status: in-development
 
+-> start_lenka_mok
+
 === start_lenka_mok ===
 Welcome aboard the Halcyon starcruiser!
 I'm Lenka Mok, your cruise director.

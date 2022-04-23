@@ -122,7 +122,7 @@ Head to whatever's nearest to you!
 <div class="character-header">Raithe Kole</div>
 Great. You'll want to stand near the ship console for this – but not too close.
 I'll enable your Hack tool – connect the inputs and outputs it shows you on your Datapad to slice the ship console.
-<div class="button"><span class="button-text">VIEW TRANSCRIPT</span></div>
+<div class="button"><a href="" class="button-text">VIEW TRANSCRIPT</a></div>
 
 { eng_room_unlocked == true:
     -> have_engineering_access
@@ -284,7 +284,7 @@ That's impressive...and I don't impress easily.
 I'll make sure the Bridge is clear for Hondo's arrival with the cargo.
 // Ben39
 Meet me there to make sure it arrives safely!
-<div class="button"><span class="button-text">SHOW EVENTS/span></div>
+<div class="button"><a href="" class="button-text">SHOW EVENTS/span></div>
 
 One thing for you to do – and this one's for my crew and my crew only.
 Alright. To prepare for our heist later today, we'll need a look-alike Hayananeya stone.
@@ -313,7 +313,7 @@ We need to get these schematics to Zabaka without Oga knowing – otherwise she'
 // Ben42
 So we're going to slice into Zabaka's databanks with your datapad's Hack tool. This might be a little messy.
 <div class="action">Data Received.</div>
-<div class="button"><span class="button-text">SHOW MAP</span></div>
+<div class="button"><a href="" class="button-text">SHOW MAP</a></div>
 
     * [<em>Hack Zabaka's databanks.</em>]
     -> hack_zabakas_databanks
@@ -325,11 +325,11 @@ I don't know if i'd call it slicing...
 I'm sure Zabaka will reach out given the unexpected disturbance.
 // Ben 43
 <div class="action">Received Data</div>
-<div class="button"><span class="button-text">SHOW COMMS</span></div>
+<div class="button"><a href="" class="button-text">SHOW COMMS</a></div>
 Excellent. We'll let Zabaka do what she does best.
 She can be a little cranky if she gets rushed.
 We'll meet back up onboard the ship later for the actual heist – here's a reminder.
-<div class="button"><span class="button-text">SHOW EVENTS</span></div>
+<div class="button"><a href="" class="button-text">SHOW EVENTS</a></div>
 
 // Ben44, Susan01 (13:52)
 Nicely done – and very efficient.

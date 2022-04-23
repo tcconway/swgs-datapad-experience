@@ -4,6 +4,8 @@
 # author: Disney.<br>all rights reserved.
 # status: in-development
 
+-> start_saja
+
 === start_saja ===
 //Dianne60 (23:19)
 <div class="character-header">Saja</div>
@@ -40,7 +42,7 @@ We'll send you more information before your excursion.
 I'll have the crew put a reminder on your itinerary.
 //Dianne64
 Until then, however - rest. Recenter yourself and be ready for what is yet to come.
-<div class="button"><span class="button-text">SHOW EVENTS</span></div>
+<div class="button"><a href="" class="button-text">SHOW EVENTS</a></div>
 <div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
 
 //06:00
@@ -63,9 +65,9 @@ Well done! It appears Savi enclosed some coordinates to those artifacts he's set
 These coordinates lead you to his workshop - make your way there to find these crates.
 When you arrive, tap the map marker to initiate the scan tool
 // Dianne67
-<img src="./images/savi-crates.png" />
+<img src="./images/crates-savis.png" />
 <div class="action">Data received.</div>
-<div class="button"><span class="button-text">SHOW MAP</span></div>
+<div class="button"><a href="" class="button-text">SHOW MAP</a></div>
     * <em>[Mission: Scan crates]</em>
         -> scan_crates
 
@@ -75,7 +77,7 @@ Incredible news - we've uncovered some Jedi artifacts on Batuu and they're on th
 // DIANNE 68
 A mysterious crate is included in the shipment - our contact on Batuu said they had a feeling it would be special to us.
 We'd love for you to join us in the Training pod tonight - We'll open it together.
-<div class="button"><span class="button-text">SHOW EVENTS</span></div>
+<div class="button"><a href="" class="button-text">SHOW EVENTS</a></div>
 <div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
     * [Event: Open container]
         -> event_open_container
