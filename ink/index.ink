@@ -1,29 +1,15 @@
-# Character: Captain Keevan
+# Star Wars Galactic starcruiser
+# Main Index File
 # Updated 04-16-2021 @ 9:21 AM ET
 # theme: dark
-# author: Disney. All Rights Reserved.
+# author: Disney.<br>all rights reserved.
 
-// ---------- START
-<em>Note: Items in italics are utilitarian only and not found in the Datapad experience.</em>
-    * [<em>Continue...</em>]-> start_captain_keevan
-
-=== start_captain_keevan ===
-  * JESS 3
-        -> couldYoumeetMeOn 
-  * AR 2
-      TODO: This choice is a loose end.
-
-= couldYoumeetMeOn
-Could you...meet me on the Bridge tonight?
-I normally wouldn't disrupt your last night on the ship...but the situation has gotten dire.
-We need to regroup and strategize about how to get the Halcyon to safety.
-I'll add a reminder to your itinerary.
-Please be prompt...we have much to do.
-    -> END
-
-==== imAlwaysSurprise ====
-I'm always surprised by how tenacious our passengers can be...always ready for an adventure, true to the Chandrila Star Line spirit.
-It's not over yet - and while I must return to my duties to keep the ship save, I have one last thing to ask of you:
-If you happen to see a violet suitcase, help keep it with the Resistance.
-It'll be vital to our escape.
-    -> END
+<em>This is a work in progress. There are tons of holes here that we are actively working to fill. In the meantime, feel free to play it.</m>
+<em>Since you not viewing this on a Datapad --and we don't have things like an M-Band, Ship Console or an Engineering Room etc. to move the story along -- we had to make a few accommodations to interact here.</em>
+<em>Items in italics are utilitarian only and not found in the Datapad experience.</em>
+Let's get started...
+<a href="csl-announcements.html">CSL Announcements</a>
+<a href="raithe-kole.html">Raithe Kole</a>
+<a href=""></a>
+<a href=""></a>
+-> END

@@ -1,10 +1,8 @@
 # Character: Hondo Ohnaka
 # Updated 04-16-2021 @ 9:21 AM ET
 # theme: dark
-# author: Disney. All Rights Reserved.
-
-// ---------- START
--> start_hondo_ohnaka
+# author: Disney.<br>all rights reserved.
+# status: done
 
 === start_hondo_ohnaka ===
 // AR05, Dianne15, Jess07

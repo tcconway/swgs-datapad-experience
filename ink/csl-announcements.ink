@@ -1,20 +1,10 @@
 # Character: Raithe Kole
 # Updated 04-11-2021 @ 12:05 AM ET
 # theme: dark
-# author: &copy; Disney. All Rights Reserved.
+# author: Disney.<br>all rights reserved.
+# status: done
 
-// ---------- START
-//-> start_csl_announcements
-// -> csl_disclaimer
 -> start_csl_announcements
-
-=== csl_disclaimer ===
-<em>This is a work in progress. There are tons of holes here that we are actively working to fill. In the meantime, feel free to play it.</m>
-<em>Since you not viewing this on a Datapad --and we don't have things like an M-Band, Ship Console or an Engineering Room etc. to move the story along -- we had to make a few accommodations to interact here.</em>
-<em>Items in italics are utilitarian only and not found in the Datapad experience.</em>
-<em><strong>Let's get started.</strong></em>
-
-    ->start_csl_announcements
 
 === start_csl_announcements ===
 // DIANNE 09 (19:47)
@@ -77,7 +67,7 @@ Please report to your muster stations immediately and we remind you to remain re
 
 === conclusion ===
 <div class="character-header">CSL Announcements</div>
-// Susan01 (06:40)
+// Susan01 (06:40), Meredith 14 (6:40)
 Attention all passengers! This concludes your Halcyon starcruiser voyage. We've enjoyed every moment with you on this adventure!
 Your Datapad functionality will return to its core functionality as you disembark. Thank you for joining us on this voyage with Chandrila Star Line.
 May the stars light your way!

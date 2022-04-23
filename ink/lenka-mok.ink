@@ -1,15 +1,10 @@
 # Character: Lenka Mok
 # Updated 04-16-2021 @ 9:21 AM ET
 # theme: dark
-# author: Disney. All Rights Reserved.
-
-// ---------- START
-<em>Note: Items in italics are utilitarian only and not found in the Datapad experience.</em>
-    * [<em>Continue...</em>]-> start_lenka_mok
+# author: Disney.<br>all rights reserved.
+# status: in-development
 
 === start_lenka_mok ===
-//
-
 Welcome aboard the Halcyon starcruiser!
 I'm Lenka Mok, your cruise director.
 I'm so excited to have you join us on our special 275th anniversary voyage to Batuu.
@@ -84,6 +79,10 @@ If you look, there are always stars int he galaxy to light our way.
     * I do not have a reservation to Oga's)
         -> no_reservation
  
+=== no_reservation ===
+To do
+-> have_reservation
+
 === have_reservation ===
 (23:29) Oh, by the way, I see you're headed to Oga's Cantina!
 A wise choice - apart from being the best place in the Outer Rim for drinks, there's also some...unique clientele.

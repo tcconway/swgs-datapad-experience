@@ -1,13 +1,13 @@
 # Character: Captain Keevan
 # Updated 04-16-2021 @ 9:21 AM ET
 # theme: dark
-# author: Disney. All Rights Reserved.
+# author: Disney.<br>all rights reserved.
+# status: in-development
 
-// ---------- START
-<em>Note: Items in italics are utilitarian only and not found in the Datapad experience.</em>
-    * [<em>Continue...</em>]-> start_captain_keevan
+->start_captain_keevan
 
 === start_captain_keevan ===
+DEV MENU
   * JESS 3
         -> couldYoumeetMeOn 
   * AR 2
