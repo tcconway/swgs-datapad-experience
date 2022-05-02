@@ -1,14 +1,26 @@
 # Character: Saja
-# Updated 04-16-2021 @ 9:21 AM ET
+# Updated 05-02-2021 @ 3:17 PM ET
 # theme: dark
 # author: Disney.<br>all rights reserved.
 # status: in-development
 
--> start_saja
+// ---------- VARIABLES
+VAR DEBUG = true
 
+// ---------- DEBUG
+{ DEBUG:
+	<strong>DEBUG MODE!</strong>
+    * [START] -> start_saja
+    * [Unknown location Parts] -> unknown
+- else:
+    -> start_saja
+}
+-> DONE
+
+// ---------- START
 === start_saja ===
 //Dianne60 (23:19)
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 Thank you for joining us for lightsaber training today.
 What an extraordinary session - to have so many among us who connect with the Force!
 Remember your training - Readiness is everything.
@@ -19,7 +31,7 @@ I hope to see you around the starcruiser.
 TODO -> saja_farewell if conditions are met.
 
 //23:19
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 It has been an honor to share this path with you today.
 And while today's journey has been disrupted my many unexpected turns, we Saja believe you could help us while on your planet excursion.
 //23:26
@@ -29,14 +41,14 @@ There are rumors of Jedi relics making their way to Batuu, and there is a scaven
 He has set aside some relics to help us continue our study.
 He will get in contact with us on Batuu with directions to the crates.
 //Dianne63
-However, we must avoid alerting the First Order
+However, we must avoid alerting the First Order.
+<div class="name-bar player">You</div>
     * [How can I help?]
+        <div class="player-answer">How can I help?</div>
         -> how_can_i_help
 
 === how_can_i_help ===
-<div class="player-header">You</div>
-<div class="player-answer">How can I help?</div>
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 What a kind offer from a gracious soul.
 We'll send you more information before your excursion.
 I'll have the crew put a reminder on your itinerary.
@@ -46,7 +58,7 @@ Until then, however - rest. Recenter yourself and be ready for what is yet to co
 <div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
 
 //06:00
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 Bright Suns! Use this greeting on Batuu for positive connections.
 As you explore Black Spire Outpost, make sure to take in your surroundings in this new place!
 // DIANNE 65
@@ -54,13 +66,12 @@ We are encouraged to find someone like Savi with a path aligned with ours - and 
 Try tuning into the nearby antenna - we'll get in touch with Savi directly.
 Head to these coordinates on your map.
 When you arrive, tap the map marker to tune into the antenna.
-    * <em>[Mission: Tune into the antenna.]</em>
+    * [Mission: Tune into the antenna.]
         -> tune_antenna
 
 === tune_antenna ===
 // Dianne66
-<div class="progression">You complete the mission.</div>
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 Well done! It appears Savi enclosed some coordinates to those artifacts he's set aside for us.
 These coordinates lead you to his workshop - make your way there to find these crates.
 When you arrive, tap the map marker to initiate the scan tool
@@ -68,11 +79,11 @@ When you arrive, tap the map marker to initiate the scan tool
 <img src="./images/crates-savis.png" />
 <div class="action">Data received.</div>
 <div class="button"><a href="" class="button-text">SHOW MAP</a></div>
-    * <em>[Mission: Scan crates]</em>
+    * [Mission: Scan crates]
         -> scan_crates
 
 === scan_crates ===
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 Incredible news - we've uncovered some Jedi artifacts on Batuu and they're on their way up to the starcruiser.
 // DIANNE 68
 A mysterious crate is included in the shipment - our contact on Batuu said they had a feeling it would be special to us.
@@ -84,7 +95,7 @@ We'd love for you to join us in the Training pod tonight - We'll open it togethe
 
 === event_open_container ===
 //20:23
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 That holocron is truly a special artifact.
 // Dianne69, Jess02
 It may have been lost to the ages - but you brought it back to us.
@@ -94,11 +105,11 @@ Master Yoda's message warned us of the darkness that is possible if this falls i
 Rey needs all the help she can get - the First Order cannot find out about this.
 Protect the Holocron - and its secrets...and may the Force be with you.
 <div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
-
+-> saja_farewell
 
 === saja_farewell ===
 // Susan01 (6:40)
-<div class="character-header">Saja</div>
+<div class="name-bar">Saja</div>
 It seems this is where our paths diverge, though in the Force, there every end is also a new beginning.
 As you continue on your journey, remember to use your connection to the Force to guide your path - wherever it may lead.
 It is an honor to share this path with you.
@@ -110,7 +121,7 @@ May the Force be with you.
 
 
 // SEGMENTS ==========================================
-
+=== unknown ===
 // KellyFvr03-04
 (06:40)
 Your connection to our study and practice inspires us - the knowledge you uncovered during this voyage is invaluable.
@@ -136,7 +147,6 @@ May the Force be with you.
 
 
 // AR06
-
 How are you holding up?
 //  * All is as the Force wills it.
 Thank you for sharing your wisdom with us.
@@ -145,6 +155,7 @@ Follow your instincts - and prepare for whatever is yet to come.
 
 
 // Susan01, //Monica01
+<div class="name-bar">Saja</div>
 TODO Need dialogue here
 find our way together.
 Maintain your focus - and prepare for whatever is yet to come.

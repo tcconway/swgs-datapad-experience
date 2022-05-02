@@ -166,6 +166,9 @@ img {
     content: " | ";
 }
 
+#theme-switch {
+	display: none;
+}
 @media screen and (max-width: 980px) {
     #controls {
         z-index: 2;
@@ -209,19 +212,25 @@ body.dark {
 .dark #controls {
     background: black;
 }
-.character-header, .player-header {
+.name-bar {
 	font-weight: 700;
 	color: #000;
     background-color: #fff;
     padding: 0 5px;
+    text-transform:uppercase
 }
-.player-header, .player-answer {
+.character {
 	text-align: right;
 }
-.progression {
-	text-align: center;
+.player {
+	text-align: right;
+}
+.non-datapad-action, non-datapad-event {
 	font-style: italic;
-	color: #cccccc;
+		color: #989898;
+}
+.non-datapad-event {
+	text-align: center;
 }
 .action, .transmission {
 	color: #E7A932;

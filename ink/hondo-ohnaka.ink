@@ -4,9 +4,22 @@
 # author: Disney.<br>all rights reserved.
 # status: done
 
--> start_hondo_ohnaka
+// ---------- VARIABLES
+VAR DEBUG = false
 
-=== start_hondo_ohnaka ===
+// ---------- DEBUG
+{DEBUG:
+	<strong>DEBUG MODE!</strong>
+    * [START] -> start_hondo
+- else:
+    -> start_hondo
+}
+-> DONE
+
+// ---------- START
+
+=== start_hondo ===
+<div class="name-bar player">Hondo Ohnaka</div>
 // AR05, Dianne15, Jess07
 Well done, my friends!
 I will personally deliver this coaxium up to the Halcyon later this evening.

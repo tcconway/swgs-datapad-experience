@@ -1,18 +1,47 @@
 # Character: Lenka Mok
-# Updated 04-16-2021 @ 9:21 AM ET
+# Updated 05-02-2021 @ 3:17 PM ET
 # theme: dark
 # author: Disney.<br>all rights reserved.
 # status: in-development
 
--> start_lenka_mok
+// ---------- VARIABLES
+VAR DEBUG = false
+VAR HAS_BOARDED = false
 
-=== start_lenka_mok ===
+// ---------- DEBUG
+{ DEBUG:
+	<strong>DEBUG MODE!</strong>
+    * [START] -> start_lenka
+- else:
+    -> start_lenka
+}
+-> DONE
+
+// ---------- START
+
+=== start_lenka ===
+{ HAS_BOARDED:
+    // TODO
+- else:
+    * [<span class="non-datapad-action">(Board the Halcyon.)</span>]
+    -> welcome_aboard
+}
+
+
+=== welcome_aboard ===
+// Haul 02 (Day 1 @ 13:23)
+<div class="name-bar">Lenka Mok</div>
 Welcome aboard the Halcyon starcruiser!
 I'm Lenka Mok, your cruise director.
 I'm so excited to have you join us on our special 275th anniversary voyage to Batuu.
 As our ship has recently been refurbished, I would encourage you to explore this beautiful starcruiser and get to know your way around!
+<div class="name-bar player">You</div>
+    * [What should I check out first?]
+        <div class="player-answer">What should I check out first?</div>
+        -> favorite_place
     * [Do you have a favorite place on the ship?]
-    -> favorite_place
+        <div class="player-answer">Do you have a favorite place on the ship?</div>
+        -> favorite_place
 
 === favorite_place ===
 <center>Do you have a favorite place on the ship?</center>
@@ -61,7 +90,7 @@ And I'll need your help.
 (22:35) SK's capture means we're in a tough spot - but we will not give up.
 It's important more now than ever that we figure out what Lt. Croy's plan is for this ship and crew.
 I've found the schematics of the ship. I think it'll help.
-<strong><em>Schematic: Halcyon received.</em></strong><strong><em></em></strong>
+<div class="action">Schematic: Halcyon received.</div>
     * [How do we deal with Lt. Croy?]
         -> deal_with_croy 
 

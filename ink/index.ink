@@ -4,15 +4,27 @@
 # theme: dark
 # author: Disney.<br>all rights reserved.
 
-/*
-*/
-<em>This is a work in progress. There are TONS of holes and dialogue not done –  we are actively working to fill. In the meantime, feel free to play it.</m>
-<em>Since you not viewing this on a Datapad – and we don't have things like an M-Band, Ship Console or an Engineering Room etc. to move the story along – we had to make a few accommodations to interact here.</em>
-<em>Items in italics are utilitarian only and not found in the Datapad experience.</em>
-<em> Finally, to jump to a different character, hit "Home" at the top right of any other screen.</em>
+// ---------- VARIABLES
+VAR DEBUG = false
+
+// ---------- DEBUG
+{ DEBUG:
+	<strong>DEBUG MODE!</strong>
+    * [START] -> start_top
+- else:
+    -> start_top
+}
+-> DONE
+
+// ---------- START
+=== start_top ===
+<span class="non-datapad-action">This is a work in progress. There are TONS of holes and dialogue not done –  we are actively working to fill. In the meantime, feel free to play it.</span>
+<span class="non-datapad-action">Since you not viewing this on a Datapad – and we don't have things like an M-Band, Ship Console or an Engineering Room etc. to move the story along – we had to make a few accommodations to interact here.</span>
+<span class="non-datapad-action">Items in italics (like this text) are utilitarian only and not found in the Datapad experience.</span>
+<span class="non-datapad-action">Finally, to jump to a different character, hit "Home" at the top right of any other screen.</span>
 
 Choose a storyline:
-<a class="choice" href="csl-announcements.html">CSL Announcements</a>
+<a class="choice" href="./csl-announcements.html">CSL Announcements</a>
 <a class="choice" href="raithe-kole.html">Raithe Kole</a>
 <a class="choice" href="captain-keevan.html">Captain keevan</a>
 <a class="choice" href="grav-talis.html">Grav Talis</a>
