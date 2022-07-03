@@ -1,7 +1,7 @@
 # Character: Hondo Ohnaka
-# Updated 04-16-2021 @ 9:21 AM ET
+# Updated 04-16-2022 @ 9:21 AM ET
 # theme: dark
-# author: Disney.<br>all rights reserved.
+# author: Disney.<br>All rights reserved.
 # status: done
 
 // ---------- VARIABLES
@@ -9,7 +9,7 @@ VAR DEBUG = false
 
 // ---------- DEBUG
 {DEBUG:
-	<strong>DEBUG MODE!</strong>
+	DEBUG MODE! # CLASS: debug
     * [START] -> start_hondo
 - else:
     -> start_hondo
@@ -19,12 +19,12 @@ VAR DEBUG = false
 // ---------- START
 
 === start_hondo ===
-<div class="name-bar player">Hondo Ohnaka</div>
+>Hondo Ohnaka # CLASS: character-bar
 // AR05, Dianne15, Jess07
 Well done, my friends!
 I will personally deliver this coaxium up to the Halcyon later this evening.
 Until then, here's a manifest for your records. In case there are any problems.
 But why would there be problems? Of course not.
 <div class="action">Coaxium Received</div>
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+TRANSMISSION ENDED # CLASS: transmission
 -> END

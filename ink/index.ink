@@ -1,30 +1,39 @@
 # Star Wars Galactic starcruiser
 # Main Index File
-# Updated 04-16-2021 @ 9:21 AM ET
+# Updated 04-16-2022 @ 9:21 AM ET
 # theme: dark
-# author: Disney.<br>all rights reserved.
+# author: Disney.<br>All rights reserved.
+
+// ---------- INCLUDES
+
 
 // ---------- VARIABLES
 VAR DEBUG = false
 
 // ---------- DEBUG
 { DEBUG:
-	<strong>DEBUG MODE!</strong>
-    * [START] -> start_top
+	DEBUG MODE! # CLASS: debug
+    + [START] -> start_index
 - else:
-    -> start_top
+    -> start_index
 }
 -> DONE
 
 // ---------- START
-=== start_top ===
-<span class="non-datapad-action">This is a work in progress. There are TONS of holes and dialogue not done –  we are actively working to fill. In the meantime, feel free to play it.</span>
-<span class="non-datapad-action">Since you not viewing this on a Datapad – and we don't have things like an M-Band, Ship Console or an Engineering Room etc. to move the story along – we had to make a few accommodations to interact here.</span>
-<span class="non-datapad-action">Items in italics (like this text) are utilitarian only and not found in the Datapad experience.</span>
-<span class="non-datapad-action">Finally, to jump to a different character, hit "Home" at the top right of any other screen.</span>
+=== start_index ===
+This is a work in progress. There are TONS of holes and dialogue not done –  we are actively working to fill. In the meantime, feel free to play it. # CLASS: non-datapad-action
+Since you not viewing this on a Datapad – and we don't have things like an M-Band, Ship Console or an Engineering Room etc. to move the story along – we had to make a few accommodations to interact here. # CLASS: non-datapad-action
+Items in italics (like this text) are utilitarian only and not found in the Datapad experience. # CLASS: non-datapad-action
+Finally, to jump to a different story path, click "Home" at the top right of any other screen. # CLASS: non-datapad-action
+-> menu_start
 
-Choose a storyline:
-<a class="choice" href="./csl-announcements.html">CSL Announcements</a>
+=== menu_start ===
+Choose a path: # CLASS: non-datapad-action
+<a class="choice" href="csl-announcements.html">CSL Announcements</a>
+<a class="choice" href="voyage-information.html">Voyage Information</a>
++ [Characters (Work in progress)] -> menu_characters
+
+=== menu_characters ===
 <a class="choice" href="raithe-kole.html">Raithe Kole</a>
 <a class="choice" href="captain-keevan.html">Captain keevan</a>
 <a class="choice" href="grav-talis.html">Grav Talis</a>
@@ -35,4 +44,6 @@ Choose a storyline:
 <a class="choice" href="raithe-kole.html">Raithe Kole</a>
 <a class="choice" href="saja.html">Saja</a>
 <a class="choice" href="sammie.html">Sammie</a>
++ [Back]
+    # RESTART 
 -> END

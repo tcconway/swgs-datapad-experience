@@ -1,7 +1,7 @@
 # Character: Saja
-# Updated 05-02-2021 @ 3:17 PM ET
+# Updated 05-02-2022 @ 3:17 PM ET
 # theme: dark
-# author: Disney.<br>all rights reserved.
+# author: Disney.<br>All rights reserved.
 # status: in-development
 
 // ---------- VARIABLES
@@ -9,7 +9,7 @@ VAR DEBUG = true
 
 // ---------- DEBUG
 { DEBUG:
-	<strong>DEBUG MODE!</strong>
+	DEBUG MODE! # CLASS: debug
     * [START] -> start_saja
     * [Unknown location Parts] -> unknown
 - else:
@@ -17,85 +17,90 @@ VAR DEBUG = true
 }
 -> DONE
 
-// ---------- START
+// ============================================================================
+// DAY 1, START
 === start_saja ===
-//Dianne60 (23:19)
-<div class="name-bar">Saja</div>
+//Dianne60 (Day ? @23:19)
+Saja # CLASS: character-bar
 Thank you for joining us for lightsaber training today.
 What an extraordinary session - to have so many among us who connect with the Force!
 Remember your training - Readiness is everything.
 Now you know to let your intuition guide you down your path.
 //Dianne61
 I hope to see you around the starcruiser.
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
-TODO -> saja_farewell if conditions are met.
+TRANSMISSION ENDED # CLASS: transmission
+    * [<em>(TBD: Some trigger)</em>]
+        -> tbd_some_trigger
 
-//23:19
-<div class="name-bar">Saja</div>
+=== tbd_some_trigger ===
+/// Dianne 61-64 (Day 1 @ 23:19)
+Saja # CLASS: character-bar
 It has been an honor to share this path with you today.
 And while today's journey has been disrupted my many unexpected turns, we Saja believe you could help us while on your planet excursion.
-//23:26
 The Saja are nomadic - we travel the galaxy searching for ties to our ancestors that will teach us about the Jedi and their way of life.
-//Dianne62
 There are rumors of Jedi relics making their way to Batuu, and there is a scavenger there - Savi - whose path is aligned with ours - a friend you can trust.
 He has set aside some relics to help us continue our study.
 He will get in contact with us on Batuu with directions to the crates.
-//Dianne63
 However, we must avoid alerting the First Order.
-<div class="name-bar player">You</div>
+You # CLASS: player-bar
     * [How can I help?]
         <div class="player-answer">How can I help?</div>
         -> how_can_i_help
 
 === how_can_i_help ===
-<div class="name-bar">Saja</div>
+Saja # CLASS: character-bar
 What a kind offer from a gracious soul.
 We'll send you more information before your excursion.
 I'll have the crew put a reminder on your itinerary.
-//Dianne64
 Until then, however - rest. Recenter yourself and be ready for what is yet to come.
-<div class="button"><a href="" class="button-text">SHOW EVENTS</a></div>
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+<a href="" class="button-text">SHOW EVENTS</a> # CLASS: button
+TRANSMISSION ENDED # CLASS: transmission
+    * [<em>(The next morning...)</em>]
+        -> next_morning
 
-//06:00
-<div class="name-bar">Saja</div>
+
+// ============================================================================
+// DAY 2
+
+=== next_morning ===
+//Dianne 64-65 (Day 2 * 06:00)
+Saja # CLASS: character-bar
 Bright Suns! Use this greeting on Batuu for positive connections.
 As you explore Black Spire Outpost, make sure to take in your surroundings in this new place!
-// DIANNE 65
-We are encouraged to find someone like Savi with a path aligned with ours - and are eager to get in contact with him.
+We are encouraged to find someone like Savi with a path aligned with ours – and are eager to get in contact with him.
 Try tuning into the nearby antenna - we'll get in touch with Savi directly.
 Head to these coordinates on your map.
 When you arrive, tap the map marker to tune into the antenna.
-    * [Mission: Tune into the antenna.]
-        -> tune_antenna
+    * [<em>(Mission: Tune into the antenna.)</em>]
+        -> mission_tune_antenna
 
-=== tune_antenna ===
-// Dianne66
-<div class="name-bar">Saja</div>
+=== mission_tune_antenna ===
+// Dianne 66
+Saja # CLASS: character-bar
 Well done! It appears Savi enclosed some coordinates to those artifacts he's set aside for us.
 These coordinates lead you to his workshop - make your way there to find these crates.
 When you arrive, tap the map marker to initiate the scan tool
 // Dianne67
-<img src="./images/crates-savis.png" />
+<img src="./images/location-img-savicratesswgs(18C8)(04C4)_(2)(04C4).png" />
 <div class="action">Data received.</div>
 <div class="button"><a href="" class="button-text">SHOW MAP</a></div>
-    * [Mission: Scan crates]
+    * [<em>(Mission: Scan crates)</em>]
         -> scan_crates
 
 === scan_crates ===
-<div class="name-bar">Saja</div>
+Saja # CLASS: character-bar
 Incredible news - we've uncovered some Jedi artifacts on Batuu and they're on their way up to the starcruiser.
 // DIANNE 68
 A mysterious crate is included in the shipment - our contact on Batuu said they had a feeling it would be special to us.
 We'd love for you to join us in the Training pod tonight - We'll open it together.
-<div class="button"><a href="" class="button-text">SHOW EVENTS</a></div>
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+<a href="" class="button-text">SHOW EVENTS</a> # CLASS: button
+TRANSMISSION ENDED # CLASS: transmission
     * [Event: Open container]
         -> event_open_container
 
 === event_open_container ===
 //20:23
-<div class="name-bar">Saja</div>
+Saja # CLASS: character-bar
 That holocron is truly a special artifact.
 // Dianne69, Jess02
 It may have been lost to the ages - but you brought it back to us.
@@ -104,17 +109,17 @@ Master Yoda's message warned us of the darkness that is possible if this falls i
 // Dianne70
 Rey needs all the help she can get - the First Order cannot find out about this.
 Protect the Holocron - and its secrets...and may the Force be with you.
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+TRANSMISSION ENDED # CLASS: transmission
 -> saja_farewell
 
 === saja_farewell ===
 // Susan01 (6:40)
-<div class="name-bar">Saja</div>
+Saja # CLASS: character-bar
 It seems this is where our paths diverge, though in the Force, there every end is also a new beginning.
 As you continue on your journey, remember to use your connection to the Force to guide your path - wherever it may lead.
 It is an honor to share this path with you.
 May the Force be with you.
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+TRANSMISSION ENDED # CLASS: transmission
 -> END
 
 
@@ -131,7 +136,7 @@ It seems this is where our paths diverge, though in the Force, there every end i
 As you continue on your journey, remember to use your connection to the Force to guide your path - wherever it may lead.
 It is an honor to share this path with you.
 May the Force be with you.
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+TRANSMISSION ENDED # CLASS: transmission
 
 
 // Misty01
@@ -143,23 +148,34 @@ It seems this is where our paths diverge, though in the Force, there every end i
 As you continue on your journey, remember to use your connection to the Force to guide your path - wherever it may lead.
 It is an honor to share this path with you.
 May the Force be with you.
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+TRANSMISSION ENDED # CLASS: transmission
 
 
-// AR06
+=== unknown_01
+// AR06 (Day? @ 22:07)
+Saja # CLASS: character-bar
 How are you holding up?
-//  * All is as the Force wills it.
+You # CLASS: player-bar
+    * [All is as the Force wills it.]
+        <div class="player-answer">All is as the Force wills it.</div>
+        -> holding_up
+
+=== holding_up
+// AR06 (Day? @ 22:07)
+Saja # CLASS: character-bar
 Thank you for sharing your wisdom with us.
 It feels as though those who came before us are here with us, guiding our journey and sharing their wisdom, as well.
 Follow your instincts - and prepare for whatever is yet to come.
 
 
+
+
 // Susan01, //Monica01
-<div class="name-bar">Saja</div>
+Saja # CLASS: character-bar
 TODO Need dialogue here
 find our way together.
 Maintain your focus - and prepare for whatever is yet to come.
-<div class="transmission">\/\/\/ TRANSMISSION ENDED \\\\\\</div>
+TRANSMISSION ENDED # CLASS: transmission
 -> saja_farewell
 
 
