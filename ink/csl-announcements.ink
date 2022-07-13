@@ -5,7 +5,7 @@
 # status: done
 
 // ---------- VARIABLES
-VAR DEBUG = true
+VAR DEBUG = false
 
 // ---------- DEBUG
 { DEBUG:

@@ -81,7 +81,7 @@ Well done! It appears Savi enclosed some coordinates to those artifacts he's set
 These coordinates lead you to his workshop - make your way there to find these crates.
 When you arrive, tap the map marker to initiate the scan tool
 // Dianne67
-<img src="./images/location-img-savicratesswgs(18C8)(04C4)_(2)(04C4).png" />
+# IMAGE: ./images/location-img-savicratesswgs(18C8)(04C4)_(2)(04C4).png
 <div class="action">Data received.</div>
 <div class="button"><a href="" class="button-text">SHOW MAP</a></div>
     * [<em>(Mission: Scan crates)</em>]

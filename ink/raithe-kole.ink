@@ -29,12 +29,13 @@ VAR DEBUG = false
 === start_raithe_kole ===
 You # CLASS: player-bar
     * [<span class="non-datapad-action">(Use your M-Band on the Engineering Room door.)</span>]
+        You tap your M-Band on the Engineering Room door. # CLASS: player-action
         // AR08 (14:41)
         Raithe Koke # CLASS: character-bar
         So...a little convor tells me you're trying to get into the Engineering Room?
         The Engineering Room is for crew only...
     * [<span class="non-datapad-action">(Tap 'Restricted Systems' on a Ship Console.)</span>]
-        <div class="player-action"> You try to access 'Restricted Systems' on  a Ship Console.</div>
+        You try to access 'Restricted Systems' on a Ship Console. # CLASS: player-action
         Raithe Koke # CLASS: character-bar
         // AR08 (14:41), Dianne55 (16:38)
         Ooh, a curious convor, are we?
@@ -57,8 +58,7 @@ Raithe Koke # CLASS: character-bar
 I'm someone who is always on the lookout for potential recruits for my crew.
 It's a lucrative busness, though not always...above board, if you catch my drift.
 You # CLASS: player-bar
-    * [Do you know how to get into Restricted Systems?]
-        <div class="player-answer">Do you know how to get in?</div>
+    * Do you know how to get into Restricted Systems? # CLASS: player-answer
         -> how_to_get_in
 
 === how_to_get_in ===
@@ -70,20 +70,19 @@ You, however, are clearly ready to be dealt in – so maybe you can fly under th
 // Dianne57
 You never know how they'll come in handy.
 You # CLASS: player-bar
-    * [Why do you need access?]
+    * Why do you need access? # CLASS: player-answer
         -> why_need_access
-    * [I'll help you if you help me...]
+    * I'll help you if you help me... # CLASS: player-answer
         -> ill_help_you
 
 === why_need_access ===
 // Amy01
-<div class="player-answer">Why do you need access?</div>
 Raithe Koke # CLASS: character-bar
 I have my reasons as I'm sure you have yours.
 But I've got my eye on you – maybe you'll prove useful for...future endeavours.
 // Ben25
 You # CLASS: player-bar
-    * [I'll help you if you help me...]
+    * I'll help you if you help me... # CLASS: player-answer
         -> ill_help_you
 
 === ill_help_you ===
@@ -95,12 +94,12 @@ Ah, I like you. That's the spirit. Let's get to it, shall we?
 }
 You'll need to find a ship console. I've noticed a few of them around the starcruiser.
 They look like this:
-<img src="./images/ship-console.png" />
+# IMAGE: ./images/ship-console.png
 Find one and let me know when you're near.
 You # CLASS: player-bar
-    * [Where can I find one?]
+    * Where can I find one? # CLASS: player-answer
         -> where_can_find_console
-    * [I'm at a ship console.]
+    * I'm at a ship console. # CLASS: player-answer
         -> at_ship_console
 
 === have_engineering_access ===
@@ -110,18 +109,16 @@ I see you have engineering access, I wonder if you would help me with something?
 
 === where_can_find_console ===
 // Amy01
-<div class="player-answer">Where can I find one?</div>
 Raithe Koke # CLASS: character-bar
 Depends on where you are.
 In scoping out the ship, I've found a few in the Atrium on Deck 6, one on the concourse of Deck 4, and one at each of the Cabin hallways near the turbolifts.
 Head to whatever's nearest to you!
 You # CLASS: player-bar
-    * [I'm at a ship console.]
+    * I'm at a ship console. # CLASS: player-answer
         -> at_ship_console
 
 === at_ship_console ===
 // Ben26 (15:31), Amy01
-<div class="player-answer">I'm at a ship console.</div>
 Raithe Koke # CLASS: character-bar
 Great. You'll want to stand near the ship console for this – but not too close.
 I'll enable your Hack tool – connect the inputs and outputs it shows you on your Datapad to slice the ship console.
@@ -142,7 +139,7 @@ Raithe Koke # CLASS: character-bar
 Ah, you got the credential code.
 Now press the "RESTRICTED SYSTEMS" button or tap your M-Band at the ship console.
 Enter the code when prompted and let's see if it works.
-<img src="./images/ship-console.png" />
+# IMAGE: ./images/ship-console.png
 You # CLASS: player-bar
     * [<span class="non-datapad-action">(Enter the credential codes in the console.)</span>]
         -> youre_in
@@ -203,23 +200,20 @@ We'll keep in touch.
         -> we_have_plans
 
 === chat_in_person ===
-TODO Figure out why this next part was triggered...or -> we_have_plans
+TODO Figure out why this next part was triggered...or -> we_have_plans # CLASS: todo
 // Ben31 (17:41)
 Raithe Koke # CLASS: character-bar
 Per usual, Gaya delivered – coordinates to a First Order coaxium transport. This data seals the deal Gaya made with the Captain.
-    * [You're helping the Captain?]
+    * You're helping the Captain? # CLASS: player-answer
     // Ben31
-    <div class="player-answer">You're helping the Captain?</div>
     For Gaya, it's not about the Captain or the Resistance. Gaya's home planet of Ryloth is at risk...the First Order is a threat to her people, and if we help the Resistance, they've agreed to help protect Ryloth if the First Order threatens it again.
     // Ben32
-        * * [What do you need me to do?]
+        * * What do you need me to do? # CLASS: player-answer
             // Ben32
-            <div class="player-answer">What do you need me to do?</div>
             Raithe Koke # CLASS: character-bar
             Gaya slipped me the coordinates for the coaxium transport on Corellia, right under the Lieutenant's nose.
             I think I can trust you...are you interested in joining our crew?
-                 * * * [Yeah, I'll join your crew!]
-                    <div class="player-answer">Yeah, I'll join your crew!</div>
+                 * * * Yeah, I'll join your crew! # CLASS: player-answer
                     I like your style. You're in.
                     // Ben33
                     Keep an eye out. Gaya's calling – I'll be in touch.
@@ -253,22 +247,21 @@ You're taking on a lot of responsibility today.
 // Ben35
 Gaya's impressed...I'm waiting to see how you do.
 Where would you like to start?
-    * [Deliver coaxium coordinates to Hondo.]
+    * Deliver coaxium coordinates to Hondo. # CLASS: player-answer
         ->deliver_coaxium_coordinates
 
 === deliver_coaxium_coordinates ===
-<div class="player-answer">Deliver coaxium coordinates to Hondo.</div>
 Raithe Koke # CLASS: character-bar
 Alright; you're gonna head over to the spaceport. Look for the Millenium Falcon docked out front.
 // Ben36
-<img src="./images/millenium-falcon.png" />
+# IMAGE: ./images/millenium-falcon.png
 
 Ohnaka Transport Solutions is recruiting, and you're going to join.
 Hondo usually has better ships, but Captain Keevan insists we use this hunk of junk.
 Gaya's worked with Hondo on some uh..."perfectly legitimate" ships in the past, he'll get us what we need...and you'll be fine.
 // Ben37
 When you arrive, let the crew at Ohnaka Transport Solutions know you have coordinates for Hondo.
-<img src="./images/ohnaka-transport-solutions.png" />
+# IMAGE: ./images/ohnaka-transport-solutions.png
 They'll ask you to tap your M-Band – that'll transfer the coaxium transport coordinates to him.
 // Ben38
 He'll let you know what to do when you get ready to board the ship...and will get you to Corellia and back in one piece...mostly.
@@ -278,11 +271,10 @@ He'll let you know what to do when you get ready to board the ship...and will ge
 === tap_ohnaka ===
 <div class="player-action">You tap your M-Band at Ohnaka Transport Solutions</div>
 How'd you do? Were you able to get the coaxium?
-    * [We got the coaxium!]
+    * We got the coaxium! # CLASS: player-answer
         -> we_got_coaxium
 
 === we_got_coaxium ===
-<div class="player-answer">We got the coaxium!</div>
         Raithe Koke # CLASS: character-bar
 That's impressive...and I don't impress easily.
 I'll make sure the Bridge is clear for Hondo's arrival with the cargo.
@@ -297,16 +289,15 @@ That way, when we swipe the one onboard the ship, no one will realize it's gone.
 Here are the schematics for the Hayananeya.
 <div class="action">Hayananeya Schematics received.</div>
 Zabaka's a friend who can help us make a convincing fake of the Hayananeya at her toy shop – but she'll need some help and that's where you come in.
-        * [What do you need me to do?]
-        -> head_to_zabaka
+        * What do you need me to do? # CLASS: player-answer
+            -> head_to_zabaka
     
 === head_to_zabaka ===
-<div class="player-answer">What do you need me to do?</div>
 Raithe Koke # CLASS: character-bar
 Head over to her shop in the marketplace. It's called Toydarian Toymaker.
 // Ben41
 Let me know when you're there.
-    * [I'm there.]
+    * I'm there. # CLASS: player-answer
     -> at_zabaka
 
 === at_zabaka ===
@@ -342,7 +333,6 @@ TRANSMISSION ENDED # CLASS: transmission
     * [<span class="non-datapad-action">(Gaya is pleased/Don't know where this is triggered.)</span>]
         -> gaya_is_pleased
     * [<span class="non-datapad-action">(After the heist live moment...)</span>]
-
         -> after_heist
 
 === gaya_is_pleased ===

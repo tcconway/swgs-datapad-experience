@@ -99,7 +99,7 @@ This is used for actions found within the Datapad, like for when you complete a 
 
     <a href="" class="button-text">SHOW EVENTS</a> # CLASS: button
 
-**Photo**
+**Photo or Image**
 	# IMAGE: ./images/ship-console.png
 
 
@@ -111,3 +111,4 @@ This is used for actions found within the Datapad, like for when you complete a 
 
     // ============================================================================
     // DAY 1
+    

@@ -154,7 +154,7 @@ You # CLASS: player-bar
 // Ben 51-52  (17:56)
 Lenka Mok # CLASS: character-bar
 Remember that sequence of symbols – then continue into the Engineering room and find the engineering computer. It looks like this:
-<img src="./images/location-img-engcomp(1D6A).png" />
+# IMAGE: ./images/location-img-engcomp(1D6A).png
 There's a section of the computer where you'll be able to enter that starship registry.
 After you've entered the registry sequence, tap your M-Band to download the ship's schematic.
 You # CLASS: player-bar

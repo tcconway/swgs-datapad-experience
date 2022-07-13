@@ -229,13 +229,14 @@ body.dark {
     text-align: right;
 
 }
-.non-datapad-action, non-datapad-event {
+.non-datapad-action, non-datapad-event, .player-action {
 	font-style: italic;
 	color: #a5a5a5;
 }
 .non-datapad-event {
 	text-align: center;
 }
+
 .action, .transmission {
 	color: #E7A932;
     text-align: center;
