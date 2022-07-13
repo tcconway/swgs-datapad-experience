@@ -42,7 +42,7 @@ You # CLASS: player-bar
     + I want to say Hello! #CLASS: player-answer
         VOYAGE INFORMATION # CLASS: character-bar
         A' DEG A' is an Anzellan greeting that we use on the ship as a sign of respect. It's pronounced "Ah-deeg-ah." Try using it instead of "Hello!" while conversing with crew.
-        While on Batuu, you might hear villagers say "Bright Suns!" thi sis another local greeting that references the three suns of the planet Batuu.
+        While on Batuu, you might hear villagers say "Bright Suns!" this is another local greeting that references the three suns of the planet Batuu.
         In the evening, they'll switch over to saying "Rising Moons," a nighttime greeting.
         -> phrases_menu
     + How do I say Goodbye? #CLASS: player-answer
