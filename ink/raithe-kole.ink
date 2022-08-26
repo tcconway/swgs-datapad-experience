@@ -27,7 +27,6 @@ VAR DEBUG = false
 -> start_raithe_kole
 
 === start_raithe_kole ===
-You # CLASS: player-bar
     * [<span class="non-datapad-action">(Use your M-Band on the Engineering Room door.)</span>]
         You tap your M-Band on the Engineering Room door. # CLASS: player-action
         // AR08 (14:41)
@@ -232,10 +231,10 @@ I took the liberty of adding reminders to your itinerary – but I'll follow up 
 It's going to be an eventful day – and we'll be right in the action.
     * [<span class="non-datapad-action">(The next day...)</span>]
         -> excursion_raithe
-    
 -> DONE
 
-// ========== DAY 2
+// ============================================================================
+// DAY 2
 
 === excursion_raithe ===
 // Ben34 (08:24)
