@@ -35,7 +35,7 @@ Choose a path: # CLASS: non-datapad-action
 
 === menu_characters ===
 <a class="choice" href="raithe-kole.html">Raithe Kole</a>
-<a class="choice" href="captain-keevan.html">Captain keevan</a>
+<a class="choice" href="captain-keevan.html">Captain Keevan</a>
 <a class="choice" href="grav-talis.html">Grav Talis</a>
 <a class="choice" href="gwellis-bagnoro.html">Gwellis Bagnoro</a>
 <a class="choice" href="hondo-ohnaka.html">Hondo Ohnaka</a>
